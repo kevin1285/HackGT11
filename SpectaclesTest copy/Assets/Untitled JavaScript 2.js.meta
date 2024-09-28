@@ -1,0 +1,35 @@
+- !<AssetImportMetadata/3e0487df-2ef3-43e3-a7bd-c885d1aa58a9>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 698fa2b2-abe0-432b-b3df-0395475c3aaa
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 698fa2b2-abe0-432b-b3df-0395475c3aaa
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 995e6412-a1c1-493d-ae31-d8486408a548
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/e65a8187-dc7f-4e55-8f61-605535fd5a3f>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/995e6412-a1c1-493d-ae31-d8486408a548>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    {}
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    -
+      {}
+  ScriptTypes:
+    -
+      {}
