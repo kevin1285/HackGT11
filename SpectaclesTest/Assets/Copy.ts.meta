@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/e0959acc-9696-4de9-9b38-3ceecaaee036>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 4d06d4ae-0871-41d2-a653-d60906bda7d3
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 4d06d4ae-0871-41d2-a653-d60906bda7d3
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 1e4f5d51-b274-471b-996b-e0532d4eecc8
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/2959fd63-ea69-48a2-a80c-d543b00281f7>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/1e4f5d51-b274-471b-996b-e0532d4eecc8>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    leftHandInteractor: false
+    objectToSpawn: false
+    rightHandInteractor: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - objectToSpawn: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      leftHandInteractor: !<MappingBased.HandInteractor> 00000000-0000-0000-0000-000000000000
+      rightHandInteractor: !<MappingBased.HandInteractor> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Asset.ObjectPrefab objectToSpawn
+    - // @input HandInteractor leftHandInteractor
+    - // @input HandInteractor rightHandInteractor

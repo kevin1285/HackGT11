@@ -1,0 +1,10 @@
+CollapsedEntities:
+  type: stringset
+  value:
+    size: 4
+    values:
+      - SpectaclesInteractionKit/package.native
+      - Untitled JavaScript 1.js
+      - Untitled JavaScript 2.js
+      - Untitled JavaScript.js
+  options: 4

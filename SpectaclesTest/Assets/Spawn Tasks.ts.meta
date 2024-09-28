@@ -1,0 +1,51 @@
+- !<AssetImportMetadata/84049066-dbef-411b-b7e4-48da67966bea>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 0bb24863-30ee-4b61-8ca0-8ae6ac64f662
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 0bb24863-30ee-4b61-8ca0-8ae6ac64f662
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> eff11890-1711-4661-988f-f7f7ca24092d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/bea660e0-c110-40ea-9c43-2407ada69419>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/eff11890-1711-4661-988f-f7f7ca24092d>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    headlockComponent: false
+    leftHandInteractor: false
+    objectToSpawn1: false
+    objectToSpawn2: false
+    objectToSpawn3: false
+    rightHandInteractor: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - objectToSpawn1: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      objectToSpawn2: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      leftHandInteractor: !<MappingBased.HandInteractor> 00000000-0000-0000-0000-000000000000
+      rightHandInteractor: !<MappingBased.HandInteractor> 00000000-0000-0000-0000-000000000000
+      objectToSpawn3: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      headlockComponent: !<MappingBased.Headlock> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Asset.ObjectPrefab objectToSpawn1
+    - // @input Asset.ObjectPrefab objectToSpawn2
+    - // @input Asset.ObjectPrefab objectToSpawn3
+    - // @input HandInteractor leftHandInteractor
+    - // @input HandInteractor rightHandInteractor
+    - // @input Headlock headlockComponent
