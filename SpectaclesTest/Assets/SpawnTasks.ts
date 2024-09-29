@@ -1,9 +1,12 @@
 import { HandInteractor } from "SpectaclesInteractionKit/Core/HandInteractor/HandInteractor";
 import { SIK } from "SpectaclesInteractionKit/SIK";
 import { Headlock } from "SpectaclesInteractionKit/Components/Interaction/Headlock/Headlock";
+import { FetchData } from './FetchDataConvert';
+import { MyScript } from './MyScript_Declaration';
+import { MyTypeScript } from './FetchDataTypeScript';
 
 @component
-export class PinchToSpawn extends BaseScriptComponent {
+export class SpawnTasks extends BaseScriptComponent {
   @input
   objectToSpawn1: ObjectPrefab;
     
@@ -22,6 +25,16 @@ export class PinchToSpawn extends BaseScriptComponent {
   @input 
   headlockComponent: Headlock; // The existing Headlock component
 
+//  @input('Component.ScriptComponent')
+//  refScript: FetchData;
+    
+  @input
+  refScript: MyTypeScript;
+    
+//  @input('Component.ScriptComponent')
+//  refScript: MyScript; //this connects to MyScript.js
+ 
+    
   private handInputData = SIK.HandInputData;
   private leftHand = this.handInputData.getHand("left");
     private rightHand = this.handInputData.getHand("right");
@@ -32,9 +45,15 @@ private firstDone: Boolean = false;
     private thirdDone: Boolean = false;
     private fourthDone: Boolean = false;
     private pinchEnabled: boolean = true; // New flag to prevent continuous triggering
-
     
-  onAwake() {
+    
+  onAwake() {        
+//   this.refScript.fetchUsers();
+//      print(this.refScript.numberVal);
+//    this.refScript.printHelloWorld();
+        
+//    this.refScript.printHelloWorld();     
+        
     this.leftHand.onPinchUp(() => {
       print("Left hand pinch detected.");
       if (this.leftHandInteractor.targetHitInfo === null) {
@@ -46,6 +65,7 @@ private firstDone: Boolean = false;
        print("Right hand pinch detected.");
       if (this.rightHandInteractor.targetHitInfo === null) {
         this.spawnObject(this.rightHand.indexTip.position);
+        //clearAll();//only test with spectacles not display
       }
     });
   }
@@ -57,14 +77,16 @@ private firstDone: Boolean = false;
     if (!this.firstDone) {
         //this.clearAll();
         const spawnedObject = this.objectToSpawn1.instantiate(this.getSceneObject());
+        //spawnedObject.getTransform().setWorldPosition(position);
         this.spawnedObjects.push(spawnedObject);
         this.firstDone = true; // Set the firstDone flag to prevent repeated spawning
         print("First object spawned.");
     } 
     else if (!this.secondDone) {
-        //this.clearAll();        
+        //this.clearAll();
+        //var newPosition = position.add(new vec3(-50, 0, 0));
         const spawnedObject = this.objectToSpawn2.instantiate(this.getSceneObject());
-        spawnedObject.getTransform().setWorldPosition(position);
+        //spawnedObject.getTransform().setWorldPosition(position);
         this.spawnedObjects.push(spawnedObject);
         this.secondDone = true; // Set the secondDone flag to prevent repeated spawning
         print("Second object spawned.");
@@ -72,7 +94,7 @@ private firstDone: Boolean = false;
     else if(!this.thirdDone) {
         //this.clearAll();    
         const spawnedObject = this.objectToSpawn3.instantiate(this.getSceneObject());
-        spawnedObject.getTransform().setWorldPosition(position);
+        //spawnedObject.getTransform().setWorldPosition(position);
         this.spawnedObjects.push(spawnedObject);
         this.thirdDone = true; // Set the secondDone flag to prevent repeated spawning
         print("Third object spawned."); 
@@ -85,6 +107,7 @@ private firstDone: Boolean = false;
 //        this.pinchEnabled = false; // Disable future pinch interactions
 //    }
   }
+    
 
     
 clearAll() {
