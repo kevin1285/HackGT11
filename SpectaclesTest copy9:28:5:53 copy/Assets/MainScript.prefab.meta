@@ -1,0 +1,56 @@
+- !<AssetImportMetadata/084f4997-99fb-4be0-95c2-d52ea63e1a04>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> e8bbae8b-14dd-4ed7-b8ba-b740824a1c1e
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> e8bbae8b-14dd-4ed7-b8ba-b740824a1c1e
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 7c91b47a-73d9-43c0-92b5-ad38e88055f3
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/d2016f4a-6180-426b-a1e1-71ae9e4876a8>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/7c91b47a-73d9-43c0-92b5-ad38e88055f3>
+  SourceRemaps:
+    - 46464e57-362e-40d3-8843-374e2bd45fc8: 952a9ba5-c244-4636-acb9-4ec49de61d14
+    - a5277083-d7dc-4220-ab0b-136472230e4b: a7cbcba8-4ec3-4130-84e6-a1de0c77af87
+  SourceState: !<own> ec041e56-1d6e-4b7e-bb10-57ce5477a90b
+- !<SceneObject/952a9ba5-c244-4636-acb9-4ec49de61d14>
+  PrefabRemaps:
+    []
+  Name: MainScript
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a7cbcba8-4ec3-4130-84e6-a1de0c77af87
+- !<ScriptComponent/a7cbcba8-4ec3-4130-84e6-a1de0c77af87>
+  PrefabRemaps:
+    []
+  Name: MainScript
+  Enabled: true
+  ScriptAsset: !<reference> 89180b8c-2bf0-47eb-98d8-fabbe86990c4
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefab/ec041e56-1d6e-4b7e-bb10-57ce5477a90b>
+  PackagePath: ""
+  objects:
+    - !<own> 952a9ba5-c244-4636-acb9-4ec49de61d14
+  LazyLoading: false
+  RetainAssets: true

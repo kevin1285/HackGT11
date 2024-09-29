@@ -1,0 +1,103 @@
+- !<AssetImportMetadata/eae67f16-2ff9-4ae3-a523-c63426dcdb1f>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> c573d0ac-286d-410e-a754-e3a6a80d0d1c
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> c573d0ac-286d-410e-a754-e3a6a80d0d1c
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 9c6ed33f-0249-4e70-ad1d-4d2660320236
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/fc4abaf1-e27a-464d-a91b-85f4d479b4aa>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/1430eb6a-eaac-4dff-ba6f-3d7b8b2a6e01>
+  PrefabRemaps:
+    []
+  Name: Text4
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3977f5a0-332b-4594-a6a3-919f2f3402c0
+- !<ObjectPrefab/2fc48c41-b689-4df9-9c35-6ec5281d7068>
+  PackagePath: ""
+  objects:
+    - !<own> 1430eb6a-eaac-4dff-ba6f-3d7b8b2a6e01
+  LazyLoading: false
+  RetainAssets: true
+- !<Text/3977f5a0-332b-4594-a6a3-919f2f3402c0>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: Text4
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+- !<ObjectPrefabAssetData/9c6ed33f-0249-4e70-ad1d-4d2660320236>
+  SourceRemaps:
+    - 82220823-b825-45ba-9245-a5b94016b3f9: 1430eb6a-eaac-4dff-ba6f-3d7b8b2a6e01
+    - eb248033-58d9-4e8a-887a-918969a87501: 3977f5a0-332b-4594-a6a3-919f2f3402c0
+  SourceState: !<own> 2fc48c41-b689-4df9-9c35-6ec5281d7068

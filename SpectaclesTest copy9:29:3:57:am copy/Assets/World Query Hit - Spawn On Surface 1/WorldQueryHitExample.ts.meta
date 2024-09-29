@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/46071559-8a92-460a-b7b3-ade8ee533510>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 12ab4db2-b260-44df-adfc-a77bcabf5762
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 12ab4db2-b260-44df-adfc-a77bcabf5762
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 10dadabc-a976-4a45-a668-881ff9cf74d0
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/507967e8-3f35-4550-94c9-dff9660656a6>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/10dadabc-a976-4a45-a668-881ff9cf74d0>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    filterEnabled: false
+    indexToSpawn: false
+    objectsToSpawn: false
+    targetObject: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - indexToSpawn: !<float> 0.000000
+      targetObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      objectsToSpawn: !<reference.SceneObject[]>
+        []
+      filterEnabled: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input float indexToSpawn
+    - // @input SceneObject targetObject
+    - "// @input SceneObject[] objectsToSpawn"
+    - // @input bool filterEnabled

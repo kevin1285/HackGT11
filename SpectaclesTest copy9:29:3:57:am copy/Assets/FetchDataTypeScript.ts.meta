@@ -1,0 +1,60 @@
+- !<AssetImportMetadata/2376699e-3d62-413c-952e-7c015637cd31>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 8c5757e9-3200-417f-9ae5-ac8d004d5937
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 8c5757e9-3200-417f-9ae5-ac8d004d5937
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 9ded7af2-b76a-49b3-9a8d-7bfd954e3441
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/4f019f88-5c15-498a-b79f-65404c792f05>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/9ded7af2-b76a-49b3-9a8d-7bfd954e3441>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    headlockComponent: false
+    leftHandInteractor: false
+    objectToSpawn1: false
+    objectToSpawn2: false
+    objectToSpawn3: false
+    objectToSpawn4: false
+    objectToSpawn5: false
+    refScript: false
+    rightHandInteractor: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - refScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      objectToSpawn1: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      objectToSpawn2: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      objectToSpawn3: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      leftHandInteractor: !<MappingBased.HandInteractor> 00000000-0000-0000-0000-000000000000
+      rightHandInteractor: !<MappingBased.HandInteractor> 00000000-0000-0000-0000-000000000000
+      headlockComponent: !<MappingBased.Headlock> 00000000-0000-0000-0000-000000000000
+      objectToSpawn4: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      objectToSpawn5: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.ScriptComponent refScript
+    - // @input Asset.ObjectPrefab objectToSpawn1
+    - // @input Asset.ObjectPrefab objectToSpawn2
+    - // @input Asset.ObjectPrefab objectToSpawn3
+    - // @input Asset.ObjectPrefab objectToSpawn4
+    - // @input Asset.ObjectPrefab objectToSpawn5
+    - // @input HandInteractor leftHandInteractor
+    - // @input HandInteractor rightHandInteractor
+    - // @input Headlock headlockComponent
