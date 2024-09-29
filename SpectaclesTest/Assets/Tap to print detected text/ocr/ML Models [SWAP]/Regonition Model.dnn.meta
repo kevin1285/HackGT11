@@ -1,0 +1,44 @@
+- !<AssetImportMetadata/3202b1c3-4e3d-43d4-990c-7d7f07900704>
+  ImportedAssetIds:
+    FileMLAsset: !<reference> 065f98c3-64a6-4d9c-9d55-a5fc8942b7b3
+  ImporterName: FileMLAssetImporter
+  PrimaryAsset: !<reference> 065f98c3-64a6-4d9c-9d55-a5fc8942b7b3
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<FileMLAssetImporterSettings/93c9c2c0-96d0-4d80-835c-359d8d415924>
+    Inputs:
+      - !<MLInput/b6fccbb1-485a-4434-9261-e589bc635852>
+        Name: x
+        Shape: {x: 832.000000, y: 32.000000, z: 3.000000}
+        Normalizations:
+          - scale: 1.000000
+            bias: 0.000000
+          - scale: 1.000000
+            bias: 0.000000
+          - scale: 1.000000
+            bias: 0.000000
+        Transformer:
+          stretch: true
+          alignment.horizontal: Center
+          alignment.vertical: Center
+          fill: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+          flipX: false
+          flipY: false
+          rotation: None
+        Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Outputs:
+      - !<MLOutput/6f2e4e9c-f621-4992-a548-0d7e74d03bec>
+        Name: save_infer_model/scale_0.tmp_1
+        Shape: {x: 97.000000, y: 208.000000, z: 1.000000}
+        Normalizations:
+          - scale: 1.000000
+            bias: 0.000000
+        InputName: ""
+        OutputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  CompressionSettings: !<SingleCompressionSettings/677f7c7c-3ca7-4d12-a8ab-bd00af5a107a>
+    CompressorName: None
+    CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000

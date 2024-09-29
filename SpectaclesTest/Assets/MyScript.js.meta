@@ -1,3 +1,4 @@
+<<<<<<< LOCAL
 - !<AssetImportMetadata/e8428e76-b93d-4e6c-8d53-2c83b39cfdf4>
   ImportedAssetIds:
     JavaScriptAsset: !<reference> 9d618615-3107-40c8-af9c-3b3b11526d11
@@ -13,6 +14,23 @@
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<ScriptAssetData/9d931e9e-ce15-4f8d-b613-b0dfb440cd60>
+=======
+- !<AssetImportMetadata/fa85729d-831e-41e5-b361-c196ae02c98b>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 455bdb29-27bd-4051-baea-039a6c7ca883
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 455bdb29-27bd-4051-baea-039a6c7ca883
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> aa528c39-2967-4c78-8a58-472d138ce9f9
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/b8e8d027-a709-46b9-8122-125ffb9f1e11>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/aa528c39-2967-4c78-8a58-472d138ce9f9>
+>>>>>>> REMOTE
   SvgIcon: ""
   Description: ""
   InternalVersion: 0

@@ -1,0 +1,54 @@
+- !<AssetImportMetadata/ecd84377-28ad-4958-8a88-f419cf5efa71>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 0659c6cb-1866-47f5-b7e0-b63d267e423e
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 0659c6cb-1866-47f5-b7e0-b63d267e423e
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> da5de25c-6e4f-490c-85ae-c07b56bebc3f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/17671d70-088f-4d59-8446-163709f9357e>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/da5de25c-6e4f-490c-85ae-c07b56bebc3f>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    classifierMlAsset: false
+    cropTexture: false
+    debugPrint: false
+    detectorInputTexture: false
+    detectorMLAsset: false
+    maxDetections: false
+    minSideThreshold: false
+    recognitionScoreThreshold: false
+    thresholdMask: false
+    unclipRatioLongSide: false
+    unclipRatioShortSide: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - detectorMLAsset: !<reference.MLAsset> 00000000-0000-0000-0000-000000000000
+      detectorInputTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      maxDetections: 50
+      thresholdMask: 0.700000
+      unclipRatioLongSide: !<float> 1.000000
+      unclipRatioShortSide: !<float> 1.000000
+      minSideThreshold: 5
+      classifierMlAsset: !<reference.MLAsset> 00000000-0000-0000-0000-000000000000
+      cropTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      recognitionScoreThreshold: 0.800000
+      debugPrint: true
+  ScriptTypes:
+    -
+      {}

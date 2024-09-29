@@ -1,0 +1,117 @@
+- !<AssetImportMetadata/77f81add-16d5-4d9f-9728-bae05df29ab9>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> c7575781-11e8-4177-864c-bc01afecc8b7
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> c7575781-11e8-4177-864c-bc01afecc8b7
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> a801f49c-895f-4c00-8c3b-4ab5d1c4993f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/77418a5f-a552-47df-9bf6-de9ec8e3edfe>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/36b783bd-0a02-4bda-a0db-bb3eb7e23b8b>
+  PackagePath: ""
+  objects:
+    - !<own> d4acfa0e-150e-40f3-af54-797ba44689bc
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/4f0ca547-e4a2-4ee5-964f-172b2ccab77d>
+  PrefabRemaps:
+    []
+  Name: OpticalCharacterRecognition
+  Enabled: true
+  ScriptAsset: !<reference> 0659c6cb-1866-47f5-b7e0-b63d267e423e
+  ScriptInputsDefault:
+    maxDetections: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      detectorMLAsset: !<reference.MLAsset> f1a6b714-3283-417e-bea7-2b6317a9f377
+      detectorInputTexture: !<reference.Texture> ce2c2653-f40e-4355-886a-eee13b1f6480
+      maxDetections: 50
+      thresholdMask: 0.750000
+      unclipRatioLongSide: !<float> 2.000000
+      unclipRatioShortSide: 1.500000
+      minSideThreshold: 2
+      classifierMlAsset: !<reference.MLAsset> 065f98c3-64a6-4d9c-9d55-a5fc8942b7b3
+      cropTexture: !<reference.Texture> 9c5e88a1-6f93-47a5-b403-c68897716505
+      recognitionScoreThreshold: 0.700000
+      debugPrint: false
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefabAssetData/a801f49c-895f-4c00-8c3b-4ab5d1c4993f>
+  SourceRemaps:
+    - 414d31a8-1890-4f90-b728-5fcf8fda77e6: e7782307-4cca-4bd3-b60e-f14b530916b3
+    - 56e8fc4f-6d1a-41c8-ad14-ecfc7b8db988: d4acfa0e-150e-40f3-af54-797ba44689bc
+    - 73778357-7b76-4268-b873-10f45fb6a6be: ae2818f7-359e-441b-b659-9e24803cc413
+    - 7498e199-9a95-4e33-a855-255b40739e12: 4f0ca547-e4a2-4ee5-964f-172b2ccab77d
+    - 761304dd-0457-4dbd-9471-9090f6dc7c51: bfcb160d-75a0-4666-87e8-75a70f1bfecf
+  SourceState: !<own> 36b783bd-0a02-4bda-a0db-bb3eb7e23b8b
+- !<ScriptComponent/ae2818f7-359e-441b-b659-9e24803cc413>
+  PrefabRemaps:
+    []
+  Name: RunOCR
+  Enabled: true
+  ScriptAsset: !<reference> 16951eba-1528-4a6c-a907-a99c668fcfd9
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      ocrController: !<reference.ScriptComponent> 4f0ca547-e4a2-4ee5-964f-172b2ccab77d
+      inputTexture: !<reference.Texture> ce2c2653-f40e-4355-886a-eee13b1f6480
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/bfcb160d-75a0-4666-87e8-75a70f1bfecf>
+  PrefabRemaps:
+    []
+  Name: Simple Demo
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ae2818f7-359e-441b-b659-9e24803cc413
+- !<SceneObject/d4acfa0e-150e-40f3-af54-797ba44689bc>
+  PrefabRemaps:
+    []
+  Name: Tap to print detected text
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -266.263306, y: -175.694534, z: -2.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> e7782307-4cca-4bd3-b60e-f14b530916b3
+    - !<own> bfcb160d-75a0-4666-87e8-75a70f1bfecf
+  Components:
+    []
+- !<SceneObject/e7782307-4cca-4bd3-b60e-f14b530916b3>
+  PrefabRemaps:
+    []
+  Name: "OCR Controller [EDIT]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 266.263306, y: 175.694534, z: 2.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4f0ca547-e4a2-4ee5-964f-172b2ccab77d
