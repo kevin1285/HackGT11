@@ -1,10 +1,26 @@
-- !<ObjectPrefab/81b550a4-be31-4bf4-b975-03ee55b8ebe5>
+- !<ObjectPrefab/b56706d3-4634-4caa-a355-fea05cba06ba>
   PackagePath: ""
   objects:
-    - !<own> b8d5f881-cb71-45b7-becb-ba42f72a1c21
+    - !<own> 6816ae74-41a6-40f3-bfb5-a1574e3b527b
   LazyLoading: false
   RetainAssets: true
-- !<ScriptComponent/33605591-4b5a-4912-8062-e4512511b59e>
+- !<SceneObject/6816ae74-41a6-40f3-bfb5-a1574e3b527b>
+  PrefabRemaps:
+    []
+  Name: RealText3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a20dcabb-c519-4adb-ab04-c9a55feb54f5
+    - !<own> 8c445acc-5a4b-47b7-9ed7-95e12bedd4ba
+- !<ScriptComponent/8c445acc-5a4b-47b7-9ed7-95e12bedd4ba>
   PrefabRemaps:
     []
   Name: Headlock
@@ -46,23 +62,7 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/b8d5f881-cb71-45b7-becb-ba42f72a1c21>
-  PrefabRemaps:
-    []
-  Name: Task1
-  Enabled: false
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> de5104b1-1f91-4f14-828f-0ab1a1350c90
-    - !<own> 33605591-4b5a-4912-8062-e4512511b59e
-- !<Text/de5104b1-1f91-4f14-828f-0ab1a1350c90>
+- !<Text/a20dcabb-c519-4adb-ab04-c9a55feb54f5>
   PrefabRemaps:
     []
   Name: Text
@@ -74,9 +74,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: |
-    ABCDEFG
-
+  Text: Ensure ventilation
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000

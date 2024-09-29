@@ -1,10 +1,25 @@
-- !<ObjectPrefab/706c5a6d-4334-4943-8671-17a30061d08e>
+- !<ObjectPrefab/c573d0ac-286d-410e-a754-e3a6a80d0d1c>
   PackagePath: ""
   objects:
-    - !<own> 86b26ec1-aa0b-4a89-b9ac-a93820bb9d66
+    - !<own> 82220823-b825-45ba-9245-a5b94016b3f9
   LazyLoading: false
   RetainAssets: true
-- !<Text/31eee033-daae-45d2-996c-206b30399bf9>
+- !<SceneObject/82220823-b825-45ba-9245-a5b94016b3f9>
+  PrefabRemaps:
+    []
+  Name: Text4
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> eb248033-58d9-4e8a-887a-918969a87501
+- !<Text/eb248033-58d9-4e8a-887a-918969a87501>
   PrefabRemaps:
     []
   Name: Text
@@ -16,9 +31,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: |
-    Task2
-
+  Text: Text4
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -69,18 +82,3 @@
     LineSpacing: 1.000000
     CapitalizationOverride: None
   DepthTest: false
-- !<SceneObject/86b26ec1-aa0b-4a89-b9ac-a93820bb9d66>
-  PrefabRemaps:
-    []
-  Name: Task3
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 31eee033-daae-45d2-996c-206b30399bf9

@@ -29,6 +29,8 @@
     objectToSpawn1: false
     objectToSpawn2: false
     objectToSpawn3: false
+    objectToSpawn4: false
+    objectToSpawn5: false
     refScript: false
     rightHandInteractor: false
   ScriptTypesHidden:
@@ -41,6 +43,8 @@
       leftHandInteractor: !<MappingBased.HandInteractor> 00000000-0000-0000-0000-000000000000
       rightHandInteractor: !<MappingBased.HandInteractor> 00000000-0000-0000-0000-000000000000
       headlockComponent: !<MappingBased.Headlock> 00000000-0000-0000-0000-000000000000
+      objectToSpawn4: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      objectToSpawn5: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -49,6 +53,8 @@
     - // @input Asset.ObjectPrefab objectToSpawn1
     - // @input Asset.ObjectPrefab objectToSpawn2
     - // @input Asset.ObjectPrefab objectToSpawn3
+    - // @input Asset.ObjectPrefab objectToSpawn4
+    - // @input Asset.ObjectPrefab objectToSpawn5
     - // @input HandInteractor leftHandInteractor
     - // @input HandInteractor rightHandInteractor
     - // @input Headlock headlockComponent

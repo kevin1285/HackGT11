@@ -1,10 +1,30 @@
-- !<ObjectPrefab/81b550a4-be31-4bf4-b975-03ee55b8ebe5>
+- !<AssetImportMetadata/13efff3c-399a-4d67-93db-0159f9713679>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 62603992-7e0f-4eb2-a77b-e1f47d88c8ad
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 62603992-7e0f-4eb2-a77b-e1f47d88c8ad
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 3fb8de5b-9910-4550-8ba9-03ecd23f97c4
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/ed21855f-19e5-444d-a744-8311e16d2b93>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/3fb8de5b-9910-4550-8ba9-03ecd23f97c4>
+  SourceRemaps:
+    - 6b7467bc-0d9c-41b9-b338-afa75df842c3: a0284200-6e59-4347-b03b-6a4255f9a336
+    - 6d10f5b9-551b-4b47-b051-8812d110fbc6: af893d31-2f56-48a3-b3db-b340fd895814
+    - 8ad9eb9c-d6f6-444c-aeee-56f3dcc09d4c: ceffdf7a-0d37-46c7-8fba-0d4322af534d
+  SourceState: !<own> 986a636e-a236-4d06-8255-bc9b1cfd40be
+- !<ObjectPrefab/986a636e-a236-4d06-8255-bc9b1cfd40be>
   PackagePath: ""
   objects:
-    - !<own> b8d5f881-cb71-45b7-becb-ba42f72a1c21
+    - !<own> af893d31-2f56-48a3-b3db-b340fd895814
   LazyLoading: false
   RetainAssets: true
-- !<ScriptComponent/33605591-4b5a-4912-8062-e4512511b59e>
+- !<ScriptComponent/a0284200-6e59-4347-b03b-6a4255f9a336>
   PrefabRemaps:
     []
   Name: Headlock
@@ -46,11 +66,11 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/b8d5f881-cb71-45b7-becb-ba42f72a1c21>
+- !<SceneObject/af893d31-2f56-48a3-b3db-b340fd895814>
   PrefabRemaps:
     []
-  Name: Task1
-  Enabled: false
+  Name: RealText5
+  Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -60,9 +80,9 @@
   Children:
     []
   Components:
-    - !<own> de5104b1-1f91-4f14-828f-0ab1a1350c90
-    - !<own> 33605591-4b5a-4912-8062-e4512511b59e
-- !<Text/de5104b1-1f91-4f14-828f-0ab1a1350c90>
+    - !<own> ceffdf7a-0d37-46c7-8fba-0d4322af534d
+    - !<own> a0284200-6e59-4347-b03b-6a4255f9a336
+- !<Text/ceffdf7a-0d37-46c7-8fba-0d4322af534d>
   PrefabRemaps:
     []
   Name: Text
@@ -75,7 +95,7 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Text: |
-    ABCDEFG
+    Document the event
 
   Editable: false
   ShowEditingPreview: true

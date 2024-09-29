@@ -1,24 +1,10 @@
-- !<AssetImportMetadata/c24ce839-33ec-40be-9d42-69f6edf4f015>
-  ImportedAssetIds:
-    ObjectPrefab: !<reference> 81b550a4-be31-4bf4-b975-03ee55b8ebe5
-  ImporterName: ObjectPrefabImporter
-  PrimaryAsset: !<reference> 81b550a4-be31-4bf4-b975-03ee55b8ebe5
-  PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
-  AssetDataMap:
-    ObjectPrefab: !<own> 52ee6725-cf24-4d3f-b43d-dae48185640b
-  DependentFiles:
-    []
-  ImporterSettings: !<AssetImporterSettings/e7ab0ebd-cd2c-43ac-94c0-ec2152e4942a>
-    {}
-  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ObjectPrefabAssetData/52ee6725-cf24-4d3f-b43d-dae48185640b>
-  SourceRemaps:
-    - 33605591-4b5a-4912-8062-e4512511b59e: 870b1278-0505-4b72-83d2-41ceff5ceffa
-    - b8d5f881-cb71-45b7-becb-ba42f72a1c21: c7b97248-45e9-4806-9926-c7f14c38c94b
-    - de5104b1-1f91-4f14-828f-0ab1a1350c90: 8127af99-3ab9-4357-ac1c-37c3a41e2809
-  SourceState: !<own> 85b81ea8-7de1-43d9-a74d-7ae7849617a0
-- !<Text/8127af99-3ab9-4357-ac1c-37c3a41e2809>
+- !<ObjectPrefab/b1696b47-026f-41d5-b19d-713c697c47b3>
+  PackagePath: ""
+  objects:
+    - !<own> 44f11a90-7f54-41b7-9f1d-c54ebd8706e8
+  LazyLoading: false
+  RetainAssets: true
+- !<Text/1eb7cbb6-3b97-4ffd-8ebe-4f187fe9eefa>
   PrefabRemaps:
     []
   Name: Text
@@ -30,9 +16,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: |
-    ABCDEFG
-
+  Text: Apply Defibrillator
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -83,13 +67,23 @@
     LineSpacing: 1.000000
     CapitalizationOverride: None
   DepthTest: false
-- !<ObjectPrefab/85b81ea8-7de1-43d9-a74d-7ae7849617a0>
-  PackagePath: ""
-  objects:
-    - !<own> c7b97248-45e9-4806-9926-c7f14c38c94b
-  LazyLoading: false
-  RetainAssets: true
-- !<ScriptComponent/870b1278-0505-4b72-83d2-41ceff5ceffa>
+- !<SceneObject/44f11a90-7f54-41b7-9f1d-c54ebd8706e8>
+  PrefabRemaps:
+    []
+  Name: RealText2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1eb7cbb6-3b97-4ffd-8ebe-4f187fe9eefa
+    - !<own> 77c7c8aa-1117-4e3c-9f2f-57da3672047b
+- !<ScriptComponent/77c7c8aa-1117-4e3c-9f2f-57da3672047b>
   PrefabRemaps:
     []
   Name: Headlock
@@ -131,19 +125,3 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/c7b97248-45e9-4806-9926-c7f14c38c94b>
-  PrefabRemaps:
-    []
-  Name: Task1
-  Enabled: false
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 8127af99-3ab9-4357-ac1c-37c3a41e2809
-    - !<own> 870b1278-0505-4b72-83d2-41ceff5ceffa

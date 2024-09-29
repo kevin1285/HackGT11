@@ -1,21 +1,69 @@
-- !<AssetImportMetadata/e3d2aa9a-7888-41b0-a616-73db312056a5>
+- !<AssetImportMetadata/bdc67132-d35c-45b7-b258-6faf1cce5a43>
   ImportedAssetIds:
-    ObjectPrefab: !<reference> 706c5a6d-4334-4943-8671-17a30061d08e
+    ObjectPrefab: !<reference> b1696b47-026f-41d5-b19d-713c697c47b3
   ImporterName: ObjectPrefabImporter
-  PrimaryAsset: !<reference> 706c5a6d-4334-4943-8671-17a30061d08e
+  PrimaryAsset: !<reference> b1696b47-026f-41d5-b19d-713c697c47b3
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
   AssetDataMap:
-    ObjectPrefab: !<own> 30d39dd8-d916-46be-9932-475257fd7eb0
+    ObjectPrefab: !<own> 37c77463-868b-497c-b426-4537c62ca4e7
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/f88a7379-fe1c-4651-9590-dde016797869>
+  ImporterSettings: !<AssetImporterSettings/2fa89515-9278-4eb6-b488-0b645df7497b>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/1ad2de1e-d557-485b-a55d-3a5c785d8d39>
+- !<ObjectPrefabAssetData/37c77463-868b-497c-b426-4537c62ca4e7>
+  SourceRemaps:
+    - 1eb7cbb6-3b97-4ffd-8ebe-4f187fe9eefa: da26534d-7f3a-4f84-8fee-6c1546f36321
+    - 44f11a90-7f54-41b7-9f1d-c54ebd8706e8: 8c7da46f-6cff-4a23-ba75-f3aafbafa85c
+    - 77c7c8aa-1117-4e3c-9f2f-57da3672047b: 3f58773a-7fa6-47e2-a87d-1f57bdae6ad1
+  SourceState: !<own> d0ea921d-beb7-437b-adb0-4777fb914e5d
+- !<ScriptComponent/3f58773a-7fa6-47e2-a87d-1f57bdae6ad1>
   PrefabRemaps:
     []
-  Name: Task3
+  Name: Headlock
+  Enabled: true
+  ScriptAsset: !<reference> 2a92f85a-a814-4f5d-bd73-4a2710147d01
+  ScriptInputsDefault:
+    _distance: true
+    _xzEnabled: true
+    _xzEasing: true
+    _yEnabled: true
+    _yEasing: true
+    _translationBuffer: true
+    _lockedPitch: true
+    _pitchEasing: true
+    _pitchOffsetDegrees: true
+    _pitchBufferDegrees: true
+    _lockedYaw: true
+    _yawEasing: true
+    _yawOffsetDegrees: true
+    _yawBufferDegrees: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _distance: !<float> 50.000000
+      _xzEnabled: true
+      _xzEasing: !<float> 1.000000
+      _yEnabled: true
+      _yEasing: !<float> 1.000000
+      _translationBuffer: !<float> 0.000000
+      _lockedPitch: true
+      _pitchEasing: !<float> 1.000000
+      _pitchOffsetDegrees: !<float> 0.000000
+      _pitchBufferDegrees: !<float> 0.000000
+      _lockedYaw: true
+      _yawEasing: !<float> 1.000000
+      _yawOffsetDegrees: !<float> 0.000000
+      _yawBufferDegrees: !<float> 0.000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/8c7da46f-6cff-4a23-ba75-f3aafbafa85c>
+  PrefabRemaps:
+    []
+  Name: RealText2
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -26,19 +74,15 @@
   Children:
     []
   Components:
-    - !<own> 9153e79b-8d3a-4dc2-9ce8-ff52737e0756
-- !<ObjectPrefab/1f27b84d-75a5-411c-a5c8-49486a7aece6>
+    - !<own> da26534d-7f3a-4f84-8fee-6c1546f36321
+    - !<own> 3f58773a-7fa6-47e2-a87d-1f57bdae6ad1
+- !<ObjectPrefab/d0ea921d-beb7-437b-adb0-4777fb914e5d>
   PackagePath: ""
   objects:
-    - !<own> 1ad2de1e-d557-485b-a55d-3a5c785d8d39
+    - !<own> 8c7da46f-6cff-4a23-ba75-f3aafbafa85c
   LazyLoading: false
   RetainAssets: true
-- !<ObjectPrefabAssetData/30d39dd8-d916-46be-9932-475257fd7eb0>
-  SourceRemaps:
-    - 31eee033-daae-45d2-996c-206b30399bf9: 9153e79b-8d3a-4dc2-9ce8-ff52737e0756
-    - 86b26ec1-aa0b-4a89-b9ac-a93820bb9d66: 1ad2de1e-d557-485b-a55d-3a5c785d8d39
-  SourceState: !<own> 1f27b84d-75a5-411c-a5c8-49486a7aece6
-- !<Text/9153e79b-8d3a-4dc2-9ce8-ff52737e0756>
+- !<Text/da26534d-7f3a-4f84-8fee-6c1546f36321>
   PrefabRemaps:
     []
   Name: Text
@@ -50,9 +94,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: |
-    Task2
-
+  Text: Apply Defibrillator
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000

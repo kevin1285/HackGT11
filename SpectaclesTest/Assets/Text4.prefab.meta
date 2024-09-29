@@ -1,56 +1,22 @@
-- !<ObjectPrefab/81b550a4-be31-4bf4-b975-03ee55b8ebe5>
-  PackagePath: ""
-  objects:
-    - !<own> b8d5f881-cb71-45b7-becb-ba42f72a1c21
-  LazyLoading: false
-  RetainAssets: true
-- !<ScriptComponent/33605591-4b5a-4912-8062-e4512511b59e>
-  PrefabRemaps:
+- !<AssetImportMetadata/eae67f16-2ff9-4ae3-a523-c63426dcdb1f>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> c573d0ac-286d-410e-a754-e3a6a80d0d1c
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> c573d0ac-286d-410e-a754-e3a6a80d0d1c
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 9c6ed33f-0249-4e70-ad1d-4d2660320236
+  DependentFiles:
     []
-  Name: Headlock
-  Enabled: true
-  ScriptAsset: !<reference> 2a92f85a-a814-4f5d-bd73-4a2710147d01
-  ScriptInputsDefault:
-    _distance: true
-    _xzEnabled: true
-    _xzEasing: true
-    _yEnabled: true
-    _yEasing: true
-    _translationBuffer: true
-    _lockedPitch: true
-    _pitchEasing: true
-    _pitchOffsetDegrees: true
-    _pitchBufferDegrees: true
-    _lockedYaw: true
-    _yawEasing: true
-    _yawOffsetDegrees: true
-    _yawBufferDegrees: true
-  ScriptTypesDefault:
+  ImporterSettings: !<AssetImporterSettings/fc4abaf1-e27a-464d-a91b-85f4d479b4aa>
     {}
-  ScriptInputs:
-    "":
-      _distance: !<float> 50.000000
-      _xzEnabled: true
-      _xzEasing: !<float> 1.000000
-      _yEnabled: true
-      _yEasing: !<float> 1.000000
-      _translationBuffer: !<float> 0.000000
-      _lockedPitch: true
-      _pitchEasing: !<float> 1.000000
-      _pitchOffsetDegrees: !<float> 0.000000
-      _pitchBufferDegrees: !<float> 0.000000
-      _lockedYaw: true
-      _yawEasing: !<float> 1.000000
-      _yawOffsetDegrees: !<float> 0.000000
-      _yawBufferDegrees: !<float> 0.000000
-  ScriptTypes:
-    "":
-      {}
-- !<SceneObject/b8d5f881-cb71-45b7-becb-ba42f72a1c21>
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/1430eb6a-eaac-4dff-ba6f-3d7b8b2a6e01>
   PrefabRemaps:
     []
-  Name: Task1
-  Enabled: false
+  Name: Text4
+  Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -60,9 +26,14 @@
   Children:
     []
   Components:
-    - !<own> de5104b1-1f91-4f14-828f-0ab1a1350c90
-    - !<own> 33605591-4b5a-4912-8062-e4512511b59e
-- !<Text/de5104b1-1f91-4f14-828f-0ab1a1350c90>
+    - !<own> 3977f5a0-332b-4594-a6a3-919f2f3402c0
+- !<ObjectPrefab/2fc48c41-b689-4df9-9c35-6ec5281d7068>
+  PackagePath: ""
+  objects:
+    - !<own> 1430eb6a-eaac-4dff-ba6f-3d7b8b2a6e01
+  LazyLoading: false
+  RetainAssets: true
+- !<Text/3977f5a0-332b-4594-a6a3-919f2f3402c0>
   PrefabRemaps:
     []
   Name: Text
@@ -74,9 +45,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: |
-    ABCDEFG
-
+  Text: Text4
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -127,3 +96,8 @@
     LineSpacing: 1.000000
     CapitalizationOverride: None
   DepthTest: false
+- !<ObjectPrefabAssetData/9c6ed33f-0249-4e70-ad1d-4d2660320236>
+  SourceRemaps:
+    - 82220823-b825-45ba-9245-a5b94016b3f9: 1430eb6a-eaac-4dff-ba6f-3d7b8b2a6e01
+    - eb248033-58d9-4e8a-887a-918969a87501: 3977f5a0-332b-4594-a6a3-919f2f3402c0
+  SourceState: !<own> 2fc48c41-b689-4df9-9c35-6ec5281d7068
