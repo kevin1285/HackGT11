@@ -4,7 +4,6 @@
     - !<own> 00000000-0000-0065-0000-000000000064
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> 597f6fa4-23e5-4230-9e74-1ece142cd000
-<<<<<<< LOCAL
     - !<own> c544ae64-cd4b-47b6-b660-a0e2c2e1e994
     - !<own> c383db54-a23b-4a69-8512-5c4c7c2eaafc
     - !<own> 0886f1be-8a84-4d45-97f6-b6a879fb8968
@@ -34,12 +33,10 @@
     - !<own> 3b751ff5-c992-4096-aa5b-274135fd35ae
     - !<own> b920cf95-7d19-46c3-ad0f-064bf6807525
     - !<own> 5b4780b4-0088-4733-bbb2-b51d4b58d252
-=======
     - !<own> eb3f0302-51c2-4966-8fe7-45ea05eb6083
     - !<own> 94787249-12e4-4dbf-a5bc-2852ded07f85
     - !<own> 79c2e6fa-a6ee-4a4d-9347-c05561e80d85
     - !<own> f5b1a9a9-2ac3-4fe7-b6ae-64852866f278
->>>>>>> REMOTE
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -7085,7 +7082,7 @@
     - 4c7bd49c-8a3c-4e19-90b6-3b56becb8e23: 6b7467bc-0d9c-41b9-b338-afa75df842c3
     - ddef754c-e1dc-403d-83a7-d73bc5c5fe94: 8ad9eb9c-d6f6-444c-aeee-56f3dcc09d4c
   Name: RealText5
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -23411,7 +23408,7 @@
     - 7e3c0b62-b454-4551-b7fa-6821bf63815a: eb248033-58d9-4e8a-887a-918969a87501
     - e671ffc3-e463-4407-8103-fe641dc05ae9: 82220823-b825-45ba-9245-a5b94016b3f9
   Name: Text4
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}

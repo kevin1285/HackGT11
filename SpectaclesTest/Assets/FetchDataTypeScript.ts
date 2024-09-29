@@ -109,24 +109,25 @@ export class MyTypeScript extends BaseScriptComponent {
 			print("First object spawned.");
 		}
         else if (!this.secondDone) {
+            this.clearAll()
 			const spawnedObject = this.objectToSpawn2.instantiate(this.getSceneObject());
 			this.spawnedObjects.push(spawnedObject);
 			this.secondDone = true;
 			print("Second object spawned.");
 		} else if (!this.thirdDone) {
-            
+            this.clearAll()
 			const spawnedObject = this.objectToSpawn3.instantiate(this.getSceneObject());
 			this.spawnedObjects.push(spawnedObject);
 			this.thirdDone = true;
 			print("Third object spawned."); 
 		}else if (!this.fourthDone) {
-            
+            this.clearAll()
 			const spawnedObject = this.objectToSpawn4.instantiate(this.getSceneObject());
 			this.spawnedObjects.push(spawnedObject);
 			this.fourthDone = true;
 			print("Fourth object spawned."); 
 		}else if (!this.fifthDone) {
-            
+            this.clearAll()
 			const spawnedObject = this.objectToSpawn5.instantiate(this.getSceneObject());
 			this.spawnedObjects.push(spawnedObject);
 			this.fifthDone = true;
