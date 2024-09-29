@@ -1,0 +1,147 @@
+- !<AssetImportMetadata/c7b1f562-50a0-4967-b9f8-225f703a8c8a>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> b56706d3-4634-4caa-a355-fea05cba06ba
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> b56706d3-4634-4caa-a355-fea05cba06ba
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> b6b3493e-60fa-420a-b3c1-1640322b7191
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/5033915a-50b9-468d-acba-e6d0589305f2>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptComponent/1b662ad6-4062-425e-a6d5-aaa52bcdb102>
+  PrefabRemaps:
+    []
+  Name: Headlock
+  Enabled: true
+  ScriptAsset: !<reference> 2a92f85a-a814-4f5d-bd73-4a2710147d01
+  ScriptInputsDefault:
+    _distance: true
+    _xzEnabled: true
+    _xzEasing: true
+    _yEnabled: true
+    _yEasing: true
+    _translationBuffer: true
+    _lockedPitch: true
+    _pitchEasing: true
+    _pitchOffsetDegrees: true
+    _pitchBufferDegrees: true
+    _lockedYaw: true
+    _yawEasing: true
+    _yawOffsetDegrees: true
+    _yawBufferDegrees: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _distance: !<float> 50.000000
+      _xzEnabled: true
+      _xzEasing: !<float> 1.000000
+      _yEnabled: true
+      _yEasing: !<float> 1.000000
+      _translationBuffer: !<float> 0.000000
+      _lockedPitch: true
+      _pitchEasing: !<float> 1.000000
+      _pitchOffsetDegrees: !<float> 0.000000
+      _pitchBufferDegrees: !<float> 0.000000
+      _lockedYaw: true
+      _yawEasing: !<float> 1.000000
+      _yawOffsetDegrees: !<float> 0.000000
+      _yawBufferDegrees: !<float> 0.000000
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefab/3d1aeb5f-7a26-43b0-9374-289ed64acef9>
+  PackagePath: ""
+  objects:
+    - !<own> b1a139d9-d0fb-43d2-80f5-d2abd706fc39
+  LazyLoading: false
+  RetainAssets: true
+- !<Text/498101f0-1ed7-458c-8c05-bb264e9974f3>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: Ensure ventilation
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+- !<SceneObject/b1a139d9-d0fb-43d2-80f5-d2abd706fc39>
+  PrefabRemaps:
+    []
+  Name: RealText3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 498101f0-1ed7-458c-8c05-bb264e9974f3
+    - !<own> 1b662ad6-4062-425e-a6d5-aaa52bcdb102
+- !<ObjectPrefabAssetData/b6b3493e-60fa-420a-b3c1-1640322b7191>
+  SourceRemaps:
+    - 6816ae74-41a6-40f3-bfb5-a1574e3b527b: b1a139d9-d0fb-43d2-80f5-d2abd706fc39
+    - 8c445acc-5a4b-47b7-9ed7-95e12bedd4ba: 1b662ad6-4062-425e-a6d5-aaa52bcdb102
+    - a20dcabb-c519-4adb-ab04-c9a55feb54f5: 498101f0-1ed7-458c-8c05-bb264e9974f3
+  SourceState: !<own> 3d1aeb5f-7a26-43b0-9374-289ed64acef9

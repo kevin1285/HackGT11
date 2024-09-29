@@ -1,0 +1,95 @@
+- !<ObjectPrefab/c7575781-11e8-4177-864c-bc01afecc8b7>
+  PackagePath: ""
+  objects:
+    - !<own> 56e8fc4f-6d1a-41c8-ad14-ecfc7b8db988
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/414d31a8-1890-4f90-b728-5fcf8fda77e6>
+  PrefabRemaps:
+    []
+  Name: "OCR Controller [EDIT]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 266.263306, y: 175.694534, z: 2.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7498e199-9a95-4e33-a855-255b40739e12
+- !<SceneObject/56e8fc4f-6d1a-41c8-ad14-ecfc7b8db988>
+  PrefabRemaps:
+    []
+  Name: Tap to print detected text
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -266.263306, y: -175.694534, z: -2.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 414d31a8-1890-4f90-b728-5fcf8fda77e6
+    - !<own> 761304dd-0457-4dbd-9471-9090f6dc7c51
+  Components:
+    []
+- !<ScriptComponent/73778357-7b76-4268-b873-10f45fb6a6be>
+  PrefabRemaps:
+    []
+  Name: RunOCR
+  Enabled: true
+  ScriptAsset: !<reference> 16951eba-1528-4a6c-a907-a99c668fcfd9
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      ocrController: !<reference.ScriptComponent> 7498e199-9a95-4e33-a855-255b40739e12
+      inputTexture: !<reference.Texture> ce2c2653-f40e-4355-886a-eee13b1f6480
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/7498e199-9a95-4e33-a855-255b40739e12>
+  PrefabRemaps:
+    []
+  Name: OpticalCharacterRecognition
+  Enabled: true
+  ScriptAsset: !<reference> 0659c6cb-1866-47f5-b7e0-b63d267e423e
+  ScriptInputsDefault:
+    maxDetections: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      detectorMLAsset: !<reference.MLAsset> f1a6b714-3283-417e-bea7-2b6317a9f377
+      detectorInputTexture: !<reference.Texture> ce2c2653-f40e-4355-886a-eee13b1f6480
+      maxDetections: 50
+      thresholdMask: 0.750000
+      unclipRatioLongSide: !<float> 2.000000
+      unclipRatioShortSide: 1.500000
+      minSideThreshold: 2
+      classifierMlAsset: !<reference.MLAsset> 065f98c3-64a6-4d9c-9d55-a5fc8942b7b3
+      cropTexture: !<reference.Texture> 9c5e88a1-6f93-47a5-b403-c68897716505
+      recognitionScoreThreshold: 0.700000
+      debugPrint: false
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/761304dd-0457-4dbd-9471-9090f6dc7c51>
+  PrefabRemaps:
+    []
+  Name: Simple Demo
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 73778357-7b76-4268-b873-10f45fb6a6be

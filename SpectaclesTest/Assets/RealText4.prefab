@@ -1,26 +1,10 @@
-- !<ObjectPrefab/fdeccc70-e02a-4bba-8e18-94c55dd8893b>
+- !<ObjectPrefab/0eb42368-9f09-461d-84f1-0c60d14a1ed8>
   PackagePath: ""
   objects:
-    - !<own> 9a856657-6dc3-458b-9298-37c2d828183f
+    - !<own> f6a9a0e4-27d6-49e9-a135-ebae991dd46f
   LazyLoading: false
   RetainAssets: true
-- !<SceneObject/9a856657-6dc3-458b-9298-37c2d828183f>
-  PrefabRemaps:
-    []
-  Name: RealText4
-  Enabled: false
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> a5f24c02-f3d1-4347-a4a7-6101cbee9fa2
-    - !<own> da6b421c-103e-4b65-a587-9adebe0aab0f
-- !<Text/a5f24c02-f3d1-4347-a4a7-6101cbee9fa2>
+- !<Text/9ba75721-61a0-430a-8346-ef05a2adcc23>
   PrefabRemaps:
     []
   Name: Text
@@ -83,7 +67,7 @@
     LineSpacing: 1.000000
     CapitalizationOverride: None
   DepthTest: false
-- !<ScriptComponent/da6b421c-103e-4b65-a587-9adebe0aab0f>
+- !<ScriptComponent/f41a46f4-3389-45c1-8577-112dc007f1ea>
   PrefabRemaps:
     []
   Name: Headlock
@@ -125,3 +109,19 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/f6a9a0e4-27d6-49e9-a135-ebae991dd46f>
+  PrefabRemaps:
+    []
+  Name: RealText4
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9ba75721-61a0-430a-8346-ef05a2adcc23
+    - !<own> f41a46f4-3389-45c1-8577-112dc007f1ea

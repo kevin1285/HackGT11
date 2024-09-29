@@ -28,6 +28,7 @@
     indexToSpawn: false
     objectsToSpawn: false
     targetObject: false
+    textDisplay: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
@@ -36,6 +37,7 @@
       objectsToSpawn: !<reference.SceneObject[]>
         []
       filterEnabled: false
+      textDisplay: !<reference.Text> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -44,3 +46,4 @@
     - // @input SceneObject targetObject
     - "// @input SceneObject[] objectsToSpawn"
     - // @input bool filterEnabled
+    - // @input Component.Text textDisplay

@@ -6,7 +6,7 @@ const EPSILON = 0.01;
 
 
 @component
-export class NewScript extends BaseScriptComponent {
+export class WorldQueryHitExample extends BaseScriptComponent {
 
 
     private primaryInteractor;
@@ -26,7 +26,10 @@ export class NewScript extends BaseScriptComponent {
     @input
     filterEnabled: boolean;
 
-    onAwake() {
+    @input('Component.Text')
+	textDisplay: Text;
+
+    init() {
         // create new hit session
         this.hitTestSession = this.createHitTestSession(this.filterEnabled);
         if (!this.sceneObject) {
@@ -82,7 +85,8 @@ export class NewScript extends BaseScriptComponent {
             if (
                 this.primaryInteractor.currentTrigger !== InteractorTriggerType.None
             ) {
-                hitPosition.y-=this.distVec[1];
+                hitPosition.y-=this.distVec.y;
+                this.textDisplay.text=this.distVec.y.toString();
             }
 
 
@@ -125,16 +129,15 @@ export class NewScript extends BaseScriptComponent {
             this.primaryInteractor.currentTrigger !== InteractorTriggerType.None
         ) {
             this.startVec=new vec3(this.primaryInteractor.startPoint.x, this.primaryInteractor.startPoint.y, this.primaryInteractor.startPoint.z + 30);;
+            this.distVec=this.startVec;
         }
         if (
             this.primaryInteractor &&
             this.primaryInteractor.isActive() &&
             this.primaryInteractor.isTargeting()&&
-            this.primaryInteractor.previousTrigger === InteractorTriggerType.None &&
             this.primaryInteractor.currentTrigger !== InteractorTriggerType.None
         ) {
-            this.distVec=this.startVec;
-            this.distVec[1]-=this.primaryInteractor.startPoint.y;
+            this.distVec.y=this.startVec.y-this.primaryInteractor.startPoint.y;
         }
     }
 

@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/fbdcd7d8-3eef-4908-a9dd-cb9bf33cb596>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 993ebc46-a496-4fed-b9c4-7de07f8f1155
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 993ebc46-a496-4fed-b9c4-7de07f8f1155
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 1a6ab042-0f51-4d09-b32f-d2de44447e8f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/7bdbee9b-432f-4cd4-a0f9-1b1f72667ea0>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/1a6ab042-0f51-4d09-b32f-d2de44447e8f>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    leftHandInteractor: false
+    refScript: false
+    rightHandInteractor: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - refScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      leftHandInteractor: !<MappingBased.HandInteractor> 00000000-0000-0000-0000-000000000000
+      rightHandInteractor: !<MappingBased.HandInteractor> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.ScriptComponent refScript
+    - // @input HandInteractor leftHandInteractor
+    - // @input HandInteractor rightHandInteractor

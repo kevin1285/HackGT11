@@ -2,6 +2,8 @@ import { HandInteractor } from "SpectaclesInteractionKit/Core/HandInteractor/Han
 import { SIK } from "SpectaclesInteractionKit/SIK";
 import { Headlock } from "SpectaclesInteractionKit/Components/Interaction/Headlock/Headlock";
 import { FetchData } from './FetchDataConvert';
+import {RunOCRType} from "./RunOCRType";
+import {WorldQueryHitExample} from "./World Query Hit - Spawn On Surface/WorldQueryHitExample";
 
 
 @component
@@ -9,7 +11,10 @@ export class MyTypeScript extends BaseScriptComponent {
 
 	@input('Component.ScriptComponent')
 	refScript: FetchData; //this connects to MyScript.js
-
+	@input
+	ocrScript: RunOCRType;
+	@input
+	needleScript: WorldQueryHitExample;
 	@input
 	objectToSpawn1: ObjectPrefab;
 
@@ -78,12 +83,21 @@ export class MyTypeScript extends BaseScriptComponent {
 //			if (this.leftHandInteractor.targetHitInfo === null) {
 //				this.spawnObject(this.leftHand.indexTip.position);
 //			}
-            this.clearAll();
-            alarmData = this.refScript.fetchUsers('/alarms');
-            print("ALARM DATA" + alarmData)
-            if(alarmData != undefined){
-                print("alskdjfaisdj;lasfj");
-            }
+            //this.clearAll();
+            
+			// alarmData = this.refScript.fetchUsers('/alarms');
+            // print("ALARM DATA" + alarmData)
+            // if(alarmData != undefined){
+            //     print("alskdjfaisdj;lasfj");
+            // }
+			if(this.ocrScript.crossCheck('AS') && this.fourthDone && !this.fifthDone){
+				if (this.leftHandInteractor.targetHitInfo === null) {
+					this.spawnObject(this.leftHand.indexTip.position);
+				}
+			}
+			if(this.fifthDone){
+				this.needleScript.init();
+			}
 		});
 
 //        this.leftHandGesture.onPalmUp(() => {
@@ -95,11 +109,19 @@ export class MyTypeScript extends BaseScriptComponent {
 		this.rightHand.onPinchUp(() => {
 			print("Right hand pinch detected.");
 			if (this.rightHandInteractor.targetHitInfo === null) {
+				// if(this.fourthDone && !this.fifthDone){}
+				// else if(this.fifthDone){
+				// 	this.spawnObject(this.rightHand.indexTip.position);
+				// }else{
+				// 	this.spawnObject(this.rightHand.indexTip.position);
+				// }
 				this.spawnObject(this.rightHand.indexTip.position);
+
 			}
             alarmData = this.refScript.fetchUsers('/alarms');
 		});
 	}
+
 
 	private spawnObject(position: vec3): void {
 		if (!this.firstDone) {
@@ -126,6 +148,7 @@ export class MyTypeScript extends BaseScriptComponent {
 			this.spawnedObjects.push(spawnedObject);
 			this.fourthDone = true;
 			print("Fourth object spawned."); 
+
 		}else if (!this.fifthDone) {
             this.clearAll()
 			const spawnedObject = this.objectToSpawn5.instantiate(this.getSceneObject());
@@ -133,6 +156,7 @@ export class MyTypeScript extends BaseScriptComponent {
 			this.fifthDone = true;
 			print("Fifth object spawned."); 
 		} else {
+			this.clearAll();
 			print("All objects already spawned.");
 		}
 	}

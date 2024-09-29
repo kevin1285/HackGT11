@@ -1,0 +1,129 @@
+- !<ObjectPrefab/62603992-7e0f-4eb2-a77b-e1f47d88c8ad>
+  PackagePath: ""
+  objects:
+    - !<own> 6d10f5b9-551b-4b47-b051-8812d110fbc6
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/6b7467bc-0d9c-41b9-b338-afa75df842c3>
+  PrefabRemaps:
+    []
+  Name: Headlock
+  Enabled: true
+  ScriptAsset: !<reference> 2a92f85a-a814-4f5d-bd73-4a2710147d01
+  ScriptInputsDefault:
+    _distance: true
+    _xzEnabled: true
+    _xzEasing: true
+    _yEnabled: true
+    _yEasing: true
+    _translationBuffer: true
+    _lockedPitch: true
+    _pitchEasing: true
+    _pitchOffsetDegrees: true
+    _pitchBufferDegrees: true
+    _lockedYaw: true
+    _yawEasing: true
+    _yawOffsetDegrees: true
+    _yawBufferDegrees: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _distance: !<float> 50.000000
+      _xzEnabled: true
+      _xzEasing: !<float> 1.000000
+      _yEnabled: true
+      _yEasing: !<float> 1.000000
+      _translationBuffer: !<float> 0.000000
+      _lockedPitch: true
+      _pitchEasing: !<float> 1.000000
+      _pitchOffsetDegrees: !<float> 0.000000
+      _pitchBufferDegrees: !<float> 0.000000
+      _lockedYaw: true
+      _yawEasing: !<float> 1.000000
+      _yawOffsetDegrees: !<float> 0.000000
+      _yawBufferDegrees: !<float> 0.000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/6d10f5b9-551b-4b47-b051-8812d110fbc6>
+  PrefabRemaps:
+    []
+  Name: RealText5
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 8ad9eb9c-d6f6-444c-aeee-56f3dcc09d4c
+    - !<own> 6b7467bc-0d9c-41b9-b338-afa75df842c3
+- !<Text/8ad9eb9c-d6f6-444c-aeee-56f3dcc09d4c>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: |
+    Document the event
+
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
